@@ -1,0 +1,41 @@
+
+; The GUID below should be replaced with a unique GUID for each adapter.
+[$RootKey$\AD7Metrics\Engine\{FE13E6D8-D734-481A-A6B0-CB9BBD3A5395}]
+
+; Indicates that the "Debug Adapter Host" engine should be used
+"CLSID"="{DAB324E9-7B35-454C-ACA8-F6BB0D5C8673}"
+
+; Indicates that the engine should be loaded directly by VS
+"AlwaysLoadLocal"=dword:00000001
+
+; Address and callstack breakpoints are not currently supported by the Debug Adapter Host
+"AddressBP"=dword:00000000
+"CallStackBP"=dword:000000
+
+; "Attach to Process" support
+;   To support attaching via the VS "Attach to Process" dialog:
+;     - Set the "Attach" property to "1" below
+;     - Provide a port supplier GUID.  To attach to processes on the local machine by PID, the default
+;         port supplier is suffient, and can be used by uncommenting the "PortSupplier" property below.
+;     - Provide a custom IAdapterLauncher implementation to generate launch configuration JSON
+;         for the adapter based on the selection in the "Attach to Process" dialog, and specify
+;         its CLSID in the "AdapterLauncher" property below.
+"Attach"=dword:00000000
+
+; Name of the debug adapter
+;   This appears in VS in several places.  For example:
+;     - The "Select Code Type" dialog for choosing which debugger to attach to a process (if Attach is supported)
+;     - The "Debugging" column of the "Processes" tool window 
+"Name"="Haskell Debug Adapter"
+
+; Path to the debug adapter executable
+"Adapter"="$PackageFolder$\HaskellDebugAdapter.bat" 
+
+; Arguments for the debug adapter executable (optional)
+;"AdapterArgs"="/arg1 /arg2"
+
+; Language Info 
+"Language"="Haskell" 
+"LanguageId"="3F5162F8-07C6-11D3-9053-00C04FA302A1"
+
+
