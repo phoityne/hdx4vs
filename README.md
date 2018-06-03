@@ -55,6 +55,9 @@ Double click hdx4vs.vsix in __hdx4vs\bin\Release__ folder, and install it.
 
 ### 1. Open Haskell project folder.
 
+* Must be installed phoityne-vscode
+* Should be install haskell-dap
+
 ### 2. Create launch.json.
 
 It is able to use same launch.json file with VSCode.  
@@ -63,8 +66,8 @@ Must specify absolute path.
 
 ### 3. Launch debugger.
 
-* Select the menu "__Tools -> Launc Debug Adapter__" in Visual Studio.
-* Choose "__Haskell Debug Adapter__" for Debug engine.
-* Specify launch.json created in advance.
-* Press OK, then dubug will be started.
+1. Select the menu "__Tools -> Launc Debug Adapter__" in Visual Studio.
+1. Choose "__Haskell Debug Adapter__" for Debug engine.
+1. Specify launch.json created in advance.
+1. Press OK, then dubug will be started.
 
