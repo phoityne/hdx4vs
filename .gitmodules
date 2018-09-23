@@ -1,0 +1,3 @@
+[submodule "submodules/language-haskell"]
+	path = submodules/language-haskell
+	url = https://github.com/JustusAdam/language-haskell.git

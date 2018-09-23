@@ -64,6 +64,24 @@
     </Content>
     <Content Include="Resources\HaskellDebugCommand.png" />
     <Content Include="Resources\HaskellDebugCommandPackage.ico" />
+    <Content Include="submodules\language-haskell\syntaxes\cabal.tmLanguage">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="submodules\language-haskell\syntaxes\codeblock-cabal.json">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="submodules\language-haskell\syntaxes\codeblock-haskell.json">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="submodules\language-haskell\syntaxes\codeblock-literate-haskell.json">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="submodules\language-haskell\syntaxes\haskell.tmLanguage">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="submodules\language-haskell\syntaxes\literateHaskell.tmLanguage">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <VSCTCompile Include="HaskellDebugCommandPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
