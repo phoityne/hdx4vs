@@ -18,6 +18,7 @@ namespace hdx4vs
     {
         const string DebugAdapterHostPackageCmdSet = "0ddba113-7ac1-4c6e-a2ef-dcac3f9e731e";
         const int LaunchCommandId = 0x0101;
+        const string HaskellDebugAdapterId = "FE13E6D8-D734-481A-A6B0-CB9BBD3A5395";
 
         /// <summary>
         /// Command ID.
@@ -121,8 +122,39 @@ namespace hdx4vs
                     //Directory.SetCurrentDirectory(dir);
 
                     DTE2 dte = (DTE2)Microsoft.VisualStudio.Shell.ServiceProvider.GlobalProvider.GetService(typeof(SDTE));
+                    string launchPath = $@"{dir}launch.json";
+                    if (false == File.Exists(launchPath))
+                    {
+                        string prjPath = dir.Replace("\\", "/");
+                        string contents = $@"
+{{
+  ""version"": ""0.2.0"",
+  ""configurations"": [
+    {{
+      ""type"": ""ghc"",
+      ""name"": ""haskell-debug-adapter"",
+      ""request"": ""launch"",
+      ""internalConsoleOptions"": ""openOnSessionStart"",
+      ""workspace"": ""{prjPath}"",
+      ""startup"": ""{prjPath}app/Main.hs"",
+      ""startupFunc"": """",
+      ""startupArgs"": """",
+      ""stopOnEntry"": false,
+      ""mainArgs"": """",
+      ""ghciPrompt"": ""H>>= "",
+      ""ghciInitialPrompt"": ""Prelude>"",
+      ""ghciCmd"": ""stack ghci --with-ghc=haskell-dap --test --no-load --no-build --main-is TARGET --ghci-options -fghci-hist-size=5"",
+      ""ghciEnv"": {{}},
+      ""logFile"": ""{prjPath}phoityne.log"",
+      ""logLevel"": ""DEBUG""
+    }}
+  ]
+}}
+";
+                        File.WriteAllText(launchPath, contents);
+                    }
 
-                    string parameters = ($@"/LaunchJson:{dir}launch.json /EngineGuid:FE13E6D8-D734-481A-A6B0-CB9BBD3A5395");
+                    string parameters = ($@" /LaunchJson:{launchPath} /EngineGuid:{HaskellDebugAdapterId}");
                     dte.Commands.Raise(DebugAdapterHostPackageCmdSet, LaunchCommandId, parameters, IntPtr.Zero);
 
                 }
@@ -138,5 +170,7 @@ namespace hdx4vs
                 }
             }
         }
+
+        const string launchContents = "";
     }
 }

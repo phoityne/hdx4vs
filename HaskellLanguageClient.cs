@@ -40,7 +40,7 @@ namespace hdx4vs
 
             System.Diagnostics.ProcessStartInfo info = new ProcessStartInfo();
             info.FileName = "stack";
-            info.Arguments = "exec hie-wrapper -- --lsp --debug -l c:\\temp\\hie.log";
+            info.Arguments = $@"exec hie-wrapper -- --lsp --debug -l {dir}hie.log";
 			info.RedirectStandardInput = true;
 			info.RedirectStandardOutput = true;
 			info.UseShellExecute = false;

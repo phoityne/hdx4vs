@@ -64,6 +64,10 @@
     <Content Include="HaskellDebugAdapter.bat">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="Haskell_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="Resources\HaskellDebugCommand.png" />
     <Content Include="Resources\HaskellDebugCommandPackage.ico" />
     <Content Include="submodules\language-haskell\syntaxes\cabal.tmLanguage">
@@ -207,6 +211,7 @@
     </Content>
     <Content Include="Resources\HaskellLogo.png">
       <IncludeInVSIX>true</IncludeInVSIX>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

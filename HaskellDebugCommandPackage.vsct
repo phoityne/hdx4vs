@@ -88,6 +88,12 @@
     </Bitmaps>
   </Commands>
 
+  <KeyBindings>  
+     <KeyBinding guid="guidHaskellDebugCommandPackageCmdSet" id="HaskellDebugCommandId"  
+        editor="guidVSStd97" key1="VK_F5" mod1="Alt Shift"/>  
+  </KeyBindings> 
+    
+
   <Symbols>
     <!-- This is the package guid. -->
     <GuidSymbol name="guidHaskellDebugCommandPackage" value="{badfefa6-d235-4a0b-9991-7333dde99433}" />

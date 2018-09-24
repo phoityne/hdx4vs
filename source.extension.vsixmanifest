@@ -3,14 +3,14 @@
     <Metadata>
         <Identity Id="hdx4vs.4c361bb6-7a13-49b3-b2d2-b92b8f540d3f" Version="0.0.2" Language="en-US" Publisher="phoityne.hs" />
         <DisplayName>hdx4vs</DisplayName>
-        <Description xml:space="preserve">Haskell Debugger Extension for Visual Studio.</Description>
+        <Description xml:space="preserve">Haskell Extension for Visual Studio.</Description>
         <MoreInfo>https://github.com/phoityne/hdx4vs</MoreInfo>
         <License>LICENSE</License>
         <GettingStartedGuide>README.md</GettingStartedGuide>
         <ReleaseNotes>README.md</ReleaseNotes>
-        <Icon>Resources\HaskellLogo.png</Icon>
-        <PreviewImage>images\HaskellLogo.png</PreviewImage>
-        <Tags>haskell ghc ghci debug </Tags>
+        <Icon>Haskell_icon.png</Icon>
+        <PreviewImage>HaskellLogo.png</PreviewImage>
+        <Tags>haskell ghc ghci debug ide</Tags>
     </Metadata>
     <Installation AllUsers="true">
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0, 16.0)" />
