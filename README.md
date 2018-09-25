@@ -2,6 +2,9 @@
 Haskell Extension for Visual Studio.  
 This vsix is under development.
 
+[]()
+![02_quick_start.gif](https://raw.githubusercontent.com/phoityne/hdx4vs/master/docs/02_quick_start.gif)
+
 ## Depends
 
 This vsix depends on these libraries. 
