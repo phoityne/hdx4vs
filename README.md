@@ -19,13 +19,23 @@ Maybe, it is better that it should be vsix separated.
   * [haskell-debug-adapter](https://github.com/phoityne/haskell-debug-adapter)
 
 
-## Announcement
-preparing release.
+## Limitations
+* run on stack project.
 
 ## Features
 under construction.  
 
 ## Setup
-under construction.  
+* hie  
+```
+> git clone https://github.com/haskell/haskell-ide-engine --recursive
+> cd haskell-ide-engine
+> stack install
+```
+
+* haskell-debugger
+```
+> stack install haskell-dap phoityne-vscode
+```
 
 
