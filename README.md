@@ -1,17 +1,12 @@
-# hdx4vs
-Haskell Extension for Visual Studio.  
-This vsix is under development.
+# Haskell Extension for Visual Studio
+ 
+This vsix is very very under development.
 
-[]()
 ![02_quick_start.gif](https://raw.githubusercontent.com/phoityne/hdx4vs/master/docs/02_quick_start.gif)
 
 ## Depends
 
 This vsix depends on these libraries. 
-*  [language-haskell](https://github.com/JustusAdam/language-haskell)  
-Currently, [syntaxes](https://github.com/JustusAdam/language-haskell/tree/master/syntaxes) files are included [directly](https://github.com/phoityne/hdx4vs/tree/master/submodules).  
-Maybe, it is better that it should be vsix separated.
-
 * [haskell-ide-engine](https://github.com/haskell/haskell-ide-engine)  
   It is the language server.
 * debugging
@@ -24,8 +19,28 @@ Maybe, it is better that it should be vsix separated.
 * run on stack project folder.
 
 
-## Features
-under construction.  
+## Requirements
+
+This vsix requires Haskell Language Server(HIE) and Haskell Debugger.  
+Check these tools have been installed propery.
+
+```
+C:\Users\phoityne>
+C:\Users\phoityne>hie-wrapper --version
+Version 0.2.2.0, Git revision 5d1d825880196eddbca4b1d12a60713f247c2a64 (dirty)
+ (1961 commits) x86_64 ghc-8.4.3
+
+C:\Users\phoityne>
+C:\Users\phoityne>phoityne-vscode --version
+phoityne-vscode-0.0.26.0
+
+C:\Users\phoityne>
+C:\Users\phoityne>haskell-dap --version
+[DAP][INFO] start haskell-dap-0.0.7.0.
+The Glorious Glasgow Haskell Compilation System, version 8.4.3
+
+C:\Users\phoityne>
+```
 
 ## Setup
 * hie  
@@ -44,5 +59,9 @@ under construction.
 ```
 
 * hdx4vs vsix  
-Install vsix from extension menu of VS.  
+Install this Haskell Extension from extension menu of VS.  
 Right click on toolbar, and check "Haskell", then Haskell icon will be shown up.
+
+
+## Features
+under construction.  
