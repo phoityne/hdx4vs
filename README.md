@@ -23,6 +23,7 @@ Maybe, it is better that it should be vsix separated.
 * run on Open Folder VS project. (not a solution.)
 * run on stack project folder.
 
+
 ## Features
 under construction.  
 
