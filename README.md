@@ -65,3 +65,4 @@ Right click on toolbar, and check "Haskell", then Haskell icon will be shown up.
 
 ## Features
 under construction.  
+
