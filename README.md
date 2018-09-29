@@ -9,7 +9,7 @@ This vsix is under development.
 
 This vsix depends on these libraries. 
 *  [language-haskell](https://github.com/JustusAdam/language-haskell)  
-Currently, [syntaxes](https://github.com/JustusAdam/language-haskell/tree/master/syntaxes) files are included directly.  
+Currently, [syntaxes](https://github.com/JustusAdam/language-haskell/tree/master/syntaxes) files are included [directly](https://github.com/phoityne/hdx4vs/tree/master/submodules).  
 Maybe, it is better that it should be vsix separated.
 
 * [haskell-ide-engine](https://github.com/haskell/haskell-ide-engine)  
@@ -20,7 +20,8 @@ Maybe, it is better that it should be vsix separated.
 
 
 ## Limitations
-* run on stack project.
+* run on Open Folder VS project. (not a solution.)
+* run on stack project folder.
 
 ## Features
 under construction.  
@@ -31,6 +32,9 @@ under construction.
 > git clone https://github.com/haskell/haskell-ide-engine --recursive
 > cd haskell-ide-engine
 > stack install
+> stack install cabal-install
+> cabal update
+> stack --stack-yaml=stack.yaml exec hoogle generate
 ```
 
 * haskell-debugger
@@ -38,4 +42,6 @@ under construction.
 > stack install haskell-dap phoityne-vscode
 ```
 
-
+* hdx4vs vsix  
+Install vsix from extension menu of VS.  
+Right click on toolbar, and check "Haskell", then Haskell icon will be shown up.
