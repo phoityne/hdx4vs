@@ -64,12 +64,7 @@
     <Content Include="HaskellDebugAdapter.bat">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Haskell_icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Resources\HaskellDebugCommand.png" />
-    <Content Include="Resources\HaskellDebugCommandPackage.ico" />
+    <Content Include="Resources\Haskell_icon.png" />
     <VSCTCompile Include="HaskellDebugCommandPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
